@@ -1,0 +1,90 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Wood_Cherry_Original
+Ka 0.000000 0.000000 0.000000
+Kd 0.596078 0.337255 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd house/Wood_Cherry_Original.jpg
+
+newmtl darkwood2
+Ka 0.000000 0.000000 0.000000
+Kd 0.227451 0.125490 0.070588
+Ks 0.330000 0.330000 0.330000
+
+newmtl _Wood_Cherry_Original_2
+Ka 0.000000 0.000000 0.000000
+Kd 0.596078 0.337255 0.164706
+Ks 0.330000 0.330000 0.330000
+
+newmtl bamboo1logs
+Ka 0.000000 0.000000 0.000000
+Kd 0.650980 0.505882 0.341176
+Ks 0.330000 0.330000 0.330000
+map_Kd house/bamboo1logs.jpg
+
+newmtl _Wood_Floor_Parquet_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.568627 0.349020 0.152941
+Ks 0.330000 0.330000 0.330000
+map_Kd house/_Wood_Floor_Parquet_1.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Groundcover_RiverRock_4inch
+Ka 0.000000 0.000000 0.000000
+Kd 0.568627 0.498039 0.427451
+Ks 0.330000 0.330000 0.330000
+map_Kd house/Groundcover_RiverRock_4inch.jpg
+
+newmtl Wood_Floor_Parquet
+Ka 0.000000 0.000000 0.000000
+Kd 0.568627 0.349020 0.152941
+Ks 0.330000 0.330000 0.330000
+map_Kd house/Wood_Floor_Parquet.jpg
+
+newmtl Translucent_Glass_Gray
+Ka 0.000000 0.000000 0.000000
+Kd 0.501961 0.501961 0.501961
+Ks 0.330000 0.330000 0.330000
+d 0.498039
+
+newmtl bamboo1logs_H
+Ka 0.000000 0.000000 0.000000
+Kd 0.650980 0.505882 0.341176
+Ks 0.330000 0.330000 0.330000
+map_Kd house/bamboo1logs_H.jpg
+
+newmtl papanwall3_dark
+Ka 0.000000 0.000000 0.000000
+Kd 0.549020 0.333333 0.258824
+Ks 0.330000 0.330000 0.330000
+map_Kd house/papanwall3_dark.jpg
+
+newmtl Tile_Various_Tan
+Ka 0.000000 0.000000 0.000000
+Kd 0.839216 0.768627 0.662745
+Ks 0.330000 0.330000 0.330000
+
+newmtl _Wood_Cherry_Original_3
+Ka 0.000000 0.000000 0.000000
+Kd 0.596078 0.337255 0.164706
+Ks 0.330000 0.330000 0.330000
+map_Kd house/_Wood_Cherry_Original_3.jpg
+
+newmtl M_10546378_thatched_roof
+Ka 0.000000 0.000000 0.000000
+Kd 0.576471 0.466667 0.376471
+Ks 0.330000 0.330000 0.330000
+map_Kd house/M_10546378_thatched_roof.jpg
+
+newmtl M_10585440_texture_of_the_classic_thatch_roof_from_inside_view
+Ka 0.000000 0.000000 0.000000
+Kd 0.819608 0.466667 0.156863
+Ks 0.330000 0.330000 0.330000
+map_Kd house/M_10585440_texture_of_the_classic_thatch_roof_from_inside_view.jpg
+

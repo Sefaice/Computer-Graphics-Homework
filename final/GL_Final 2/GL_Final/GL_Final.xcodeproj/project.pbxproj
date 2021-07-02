@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC44B4C922AFA822004CEE24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC44B4C822AFA822004CEE24 /* main.cpp */; };
+		FC44B4D122AFA99F004CEE24 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC44B4D022AFA99F004CEE24 /* GLUT.framework */; };
+		FC44B4D322AFA9A4004CEE24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC44B4D222AFA9A4004CEE24 /* OpenGL.framework */; };
+		FC44B4D522AFA9D5004CEE24 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC44B4D422AFA9D5004CEE24 /* libGLEW.2.1.0.dylib */; };
+		FC44B4E222AFADE1004CEE24 /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC44B4E122AFADE1004CEE24 /* libglfw.3.4.dylib */; };
+		FC44B4E522AFCB30004CEE24 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC44B4E322AFCB30004CEE24 /* texture.cpp */; };
+		FC44B4E822AFCB44004CEE24 /* resource_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC44B4E622AFCB44004CEE24 /* resource_manager.cpp */; };
+		FC44B4EB22AFCDCF004CEE24 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC44B4EA22AFCDCF004CEE24 /* shader.cpp */; };
+		FC44B4EF22AFD230004CEE24 /* libSOIL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC44B4EE22AFD22F004CEE24 /* libSOIL.dylib */; };
+		FC44B4F322AFD6D7004CEE24 /* terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC44B4F222AFD6D7004CEE24 /* terrain.cpp */; };
+		FC44B51B22B0E3AD004CEE24 /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC44B51A22B0E3AD004CEE24 /* libassimp.4.1.0.dylib */; };
+		FC44B53A22B13998004CEE24 /* skyBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC44B53922B13998004CEE24 /* skyBox.cpp */; };
+		FC44B59422B2554F004CEE24 /* Snow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC44B59322B2554F004CEE24 /* Snow.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC44B4C322AFA822004CEE24 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC44B4C522AFA822004CEE24 /* GL_Final */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GL_Final; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC44B4C822AFA822004CEE24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FC44B4D022AFA99F004CEE24 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		FC44B4D222AFA9A4004CEE24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FC44B4D422AFA9D5004CEE24 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		FC44B4D822AFAA89004CEE24 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		FC44B4D922AFAA89004CEE24 /* camera_quaternion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera_quaternion.h; sourceTree = "<group>"; };
+		FC44B4DA22AFAA89004CEE24 /* fragmentShader.fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragmentShader.fs.glsl; sourceTree = "<group>"; };
+		FC44B4DB22AFAA92004CEE24 /* phong.vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = phong.vs.glsl; sourceTree = "<group>"; };
+		FC44B4DC22AFAA92004CEE24 /* vertexShader.vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertexShader.vs.glsl; sourceTree = "<group>"; };
+		FC44B4DE22AFAA92004CEE24 /* phong.fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = phong.fs.glsl; sourceTree = "<group>"; };
+		FC44B4E122AFADE1004CEE24 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.4.dylib; sourceTree = "<group>"; };
+		FC44B4E322AFCB30004CEE24 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
+		FC44B4E422AFCB30004CEE24 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		FC44B4E622AFCB44004CEE24 /* resource_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resource_manager.cpp; sourceTree = "<group>"; };
+		FC44B4E722AFCB44004CEE24 /* resource_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource_manager.h; sourceTree = "<group>"; };
+		FC44B4E922AFCDCF004CEE24 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
+		FC44B4EA22AFCDCF004CEE24 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
+		FC44B4EE22AFD22F004CEE24 /* libSOIL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libSOIL.dylib; sourceTree = "<group>"; };
+		FC44B4F122AFD6CE004CEE24 /* terrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = terrain.h; sourceTree = "<group>"; };
+		FC44B4F222AFD6D7004CEE24 /* terrain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = terrain.cpp; sourceTree = "<group>"; };
+		FC44B4F722AFED25004CEE24 /* terrain.vs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = terrain.vs.glsl; sourceTree = "<group>"; };
+		FC44B4F822AFED34004CEE24 /* terrain.fs.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = terrain.fs.glsl; sourceTree = "<group>"; };
+		FC44B4F922AFF15F004CEE24 /* rock.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rock.jpeg; sourceTree = "<group>"; };
+		FC44B4FA22AFF15F004CEE24 /* lava.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lava.jpeg; sourceTree = "<group>"; };
+		FC44B4FB22B0087B004CEE24 /* terrainmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = terrainmap.jpg; sourceTree = "<group>"; };
+		FC44B4FC22B0B3CB004CEE24 /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane.jpg; sourceTree = "<group>"; };
+		FC44B4FD22B0B943004CEE24 /* grass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass.jpg; sourceTree = "<group>"; };
+		FC44B4FE22B0BB1C004CEE24 /* snowfield.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowfield.jpeg; sourceTree = "<group>"; };
+		FC44B4FF22B0C054004CEE24 /* mesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		FC44B50022B0C1E2004CEE24 /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		FC44B51822B0DC3B004CEE24 /* 1.model_loading.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.model_loading.vs; sourceTree = "<group>"; };
+		FC44B51922B0DC4C004CEE24 /* 1.model_loading.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 1.model_loading.fs; sourceTree = "<group>"; };
+		FC44B51A22B0E3AD004CEE24 /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.4.1.0.dylib; sourceTree = "<group>"; };
+		FC44B52222B0F1F3004CEE24 /* bamboo.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = bamboo.mtl; sourceTree = "<group>"; };
+		FC44B52322B0F1F3004CEE24 /* bamboo.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = bamboo.obj; sourceTree = "<group>"; };
+		FC44B52522B0F1F3004CEE24 /* Material__113.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Material__113.png; sourceTree = "<group>"; };
+		FC44B52622B0F1F3004CEE24 /* Material__114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Material__114.png; sourceTree = "<group>"; };
+		FC44B52822B12E9E004CEE24 /* house.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = house.obj; sourceTree = "<group>"; };
+		FC44B52A22B12E9E004CEE24 /* Wood_Floor_Parquet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wood_Floor_Parquet.jpg; sourceTree = "<group>"; };
+		FC44B52B22B12E9E004CEE24 /* Groundcover_RiverRock_4inch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Groundcover_RiverRock_4inch.jpg; sourceTree = "<group>"; };
+		FC44B52C22B12E9E004CEE24 /* _Wood_Cherry_Original_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = _Wood_Cherry_Original_3.jpg; sourceTree = "<group>"; };
+		FC44B52D22B12E9E004CEE24 /* M_10546378_thatched_roof.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M_10546378_thatched_roof.jpg; sourceTree = "<group>"; };
+		FC44B52E22B12E9E004CEE24 /* _Wood_Floor_Parquet_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = _Wood_Floor_Parquet_1.jpg; sourceTree = "<group>"; };
+		FC44B52F22B12E9E004CEE24 /* Wood_Cherry_Original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wood_Cherry_Original.jpg; sourceTree = "<group>"; };
+		FC44B53022B12E9E004CEE24 /* bamboo1logs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bamboo1logs.jpg; sourceTree = "<group>"; };
+		FC44B53122B12E9E004CEE24 /* M_10585440_texture_of_the_classic_thatch_roof_from_inside_view.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = M_10585440_texture_of_the_classic_thatch_roof_from_inside_view.jpg; sourceTree = "<group>"; };
+		FC44B53222B12E9E004CEE24 /* papanwall3_dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papanwall3_dark.jpg; sourceTree = "<group>"; };
+		FC44B53322B12E9E004CEE24 /* bamboo1logs_H.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bamboo1logs_H.jpg; sourceTree = "<group>"; };
+		FC44B53422B12E9E004CEE24 /* house.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = house.mtl; sourceTree = "<group>"; };
+		FC44B53622B1307B004CEE24 /* bamboo2.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = bamboo2.obj; sourceTree = "<group>"; };
+		FC44B53722B1307B004CEE24 /* bamboo2.mtl */ = {isa = PBXFileReference; lastKnownFileType = text; path = bamboo2.mtl; sourceTree = "<group>"; };
+		FC44B53822B1398E004CEE24 /* skyBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skyBox.h; sourceTree = "<group>"; };
+		FC44B53922B13998004CEE24 /* skyBox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = skyBox.cpp; sourceTree = "<group>"; };
+		FC44B53B22B13D6D004CEE24 /* skybox.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = skybox.vs; sourceTree = "<group>"; };
+		FC44B53C22B13D83004CEE24 /* skybox.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = skybox.fs; sourceTree = "<group>"; };
+		FC44B53E22B143C8004CEE24 /* riverside_north.BMP */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = riverside_north.BMP; sourceTree = "<group>"; };
+		FC44B53F22B143C8004CEE24 /* RiverSide.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RiverSide.JPG; sourceTree = "<group>"; };
+		FC44B54022B143C8004CEE24 /* riverside_down.BMP */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = riverside_down.BMP; sourceTree = "<group>"; };
+		FC44B54122B143C8004CEE24 /* riverside_east.BMP */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = riverside_east.BMP; sourceTree = "<group>"; };
+		FC44B54222B143C8004CEE24 /* riverside_south.BMP */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = riverside_south.BMP; sourceTree = "<group>"; };
+		FC44B54322B143C8004CEE24 /* riverside_west.BMP */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = riverside_west.BMP; sourceTree = "<group>"; };
+		FC44B54422B143C8004CEE24 /* riverside_up.BMP */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = riverside_up.BMP; sourceTree = "<group>"; };
+		FC44B59122B25463004CEE24 /* rain3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = rain3.bmp; sourceTree = "<group>"; };
+		FC44B59222B254AA004CEE24 /* Snow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snow.h; sourceTree = "<group>"; };
+		FC44B59322B2554F004CEE24 /* Snow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Snow.cpp; sourceTree = "<group>"; };
+		FC44B59522B255DB004CEE24 /* SnowRender.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SnowRender.vs; sourceTree = "<group>"; };
+		FC44B59622B255DB004CEE24 /* SnowUpdate.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SnowUpdate.fs; sourceTree = "<group>"; };
+		FC44B59722B255DB004CEE24 /* SnowUpdate.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SnowUpdate.vs; sourceTree = "<group>"; };
+		FC44B59822B255DB004CEE24 /* SnowShadow.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SnowShadow.fs; sourceTree = "<group>"; };
+		FC44B59922B255DB004CEE24 /* Snow.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Snow.vs; sourceTree = "<group>"; };
+		FC44B59A22B255DB004CEE24 /* SnowShadow.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SnowShadow.vs; sourceTree = "<group>"; };
+		FC44B59B22B255DB004CEE24 /* SnowRender.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SnowRender.fs; sourceTree = "<group>"; };
+		FC44B59C22B255DB004CEE24 /* SnowUpdate.gs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = SnowUpdate.gs; sourceTree = "<group>"; };
+		FC44B59D22B2776E004CEE24 /* rain4.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = rain4.bmp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC44B4C222AFA822004CEE24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC44B4EF22AFD230004CEE24 /* libSOIL.dylib in Frameworks */,
+				FC44B4D522AFA9D5004CEE24 /* libGLEW.2.1.0.dylib in Frameworks */,
+				FC44B51B22B0E3AD004CEE24 /* libassimp.4.1.0.dylib in Frameworks */,
+				FC44B4E222AFADE1004CEE24 /* libglfw.3.4.dylib in Frameworks */,
+				FC44B4D322AFA9A4004CEE24 /* OpenGL.framework in Frameworks */,
+				FC44B4D122AFA99F004CEE24 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC44B4BC22AFA822004CEE24 = {
+			isa = PBXGroup;
+			children = (
+				FC44B4C722AFA822004CEE24 /* GL_Final */,
+				FC44B4C622AFA822004CEE24 /* Products */,
+				FC44B4CF22AFA99F004CEE24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC44B4C622AFA822004CEE24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B4C522AFA822004CEE24 /* GL_Final */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC44B4C722AFA822004CEE24 /* GL_Final */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B4F422AFE3F6004CEE24 /* assets */,
+				FC44B4F022AFD6AF004CEE24 /* models */,
+				FC44B4ED22AFCE33004CEE24 /* shaders */,
+				FC44B4EC22AFCDF8004CEE24 /* resourceManager */,
+				FC44B4C822AFA822004CEE24 /* main.cpp */,
+				FC44B4D922AFAA89004CEE24 /* camera_quaternion.h */,
+				FC44B4D822AFAA89004CEE24 /* camera.h */,
+			);
+			path = GL_Final;
+			sourceTree = "<group>";
+		};
+		FC44B4CF22AFA99F004CEE24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B51A22B0E3AD004CEE24 /* libassimp.4.1.0.dylib */,
+				FC44B4E122AFADE1004CEE24 /* libglfw.3.4.dylib */,
+				FC44B4D422AFA9D5004CEE24 /* libGLEW.2.1.0.dylib */,
+				FC44B4EE22AFD22F004CEE24 /* libSOIL.dylib */,
+				FC44B4D222AFA9A4004CEE24 /* OpenGL.framework */,
+				FC44B4D022AFA99F004CEE24 /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC44B4EC22AFCDF8004CEE24 /* resourceManager */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B4EA22AFCDCF004CEE24 /* shader.cpp */,
+				FC44B4E922AFCDCF004CEE24 /* shader.h */,
+				FC44B4E322AFCB30004CEE24 /* texture.cpp */,
+				FC44B4E422AFCB30004CEE24 /* texture.h */,
+				FC44B4E622AFCB44004CEE24 /* resource_manager.cpp */,
+				FC44B4E722AFCB44004CEE24 /* resource_manager.h */,
+				FC44B4FF22B0C054004CEE24 /* mesh.h */,
+				FC44B50022B0C1E2004CEE24 /* model.h */,
+			);
+			path = resourceManager;
+			sourceTree = "<group>";
+		};
+		FC44B4ED22AFCE33004CEE24 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B4DC22AFAA92004CEE24 /* vertexShader.vs.glsl */,
+				FC44B4DA22AFAA89004CEE24 /* fragmentShader.fs.glsl */,
+				FC44B4DE22AFAA92004CEE24 /* phong.fs.glsl */,
+				FC44B4DB22AFAA92004CEE24 /* phong.vs.glsl */,
+				FC44B4F722AFED25004CEE24 /* terrain.vs.glsl */,
+				FC44B4F822AFED34004CEE24 /* terrain.fs.glsl */,
+				FC44B51822B0DC3B004CEE24 /* 1.model_loading.vs */,
+				FC44B51922B0DC4C004CEE24 /* 1.model_loading.fs */,
+				FC44B53B22B13D6D004CEE24 /* skybox.vs */,
+				FC44B53C22B13D83004CEE24 /* skybox.fs */,
+				FC44B59922B255DB004CEE24 /* Snow.vs */,
+				FC44B59B22B255DB004CEE24 /* SnowRender.fs */,
+				FC44B59522B255DB004CEE24 /* SnowRender.vs */,
+				FC44B59822B255DB004CEE24 /* SnowShadow.fs */,
+				FC44B59A22B255DB004CEE24 /* SnowShadow.vs */,
+				FC44B59622B255DB004CEE24 /* SnowUpdate.fs */,
+				FC44B59C22B255DB004CEE24 /* SnowUpdate.gs */,
+				FC44B59722B255DB004CEE24 /* SnowUpdate.vs */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
+		FC44B4F022AFD6AF004CEE24 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B4F122AFD6CE004CEE24 /* terrain.h */,
+				FC44B4F222AFD6D7004CEE24 /* terrain.cpp */,
+				FC44B53822B1398E004CEE24 /* skyBox.h */,
+				FC44B53922B13998004CEE24 /* skyBox.cpp */,
+				FC44B59222B254AA004CEE24 /* Snow.h */,
+				FC44B59322B2554F004CEE24 /* Snow.cpp */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FC44B4F422AFE3F6004CEE24 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B50122B0C6C9004CEE24 /* models */,
+				FC44B4F522AFE406004CEE24 /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		FC44B4F522AFE406004CEE24 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B53D22B143C8004CEE24 /* SkyBox */,
+				FC44B4FA22AFF15F004CEE24 /* lava.jpeg */,
+				FC44B4FB22B0087B004CEE24 /* terrainmap.jpg */,
+				FC44B4F922AFF15F004CEE24 /* rock.jpeg */,
+				FC44B4FC22B0B3CB004CEE24 /* plane.jpg */,
+				FC44B4FD22B0B943004CEE24 /* grass.jpg */,
+				FC44B4FE22B0BB1C004CEE24 /* snowfield.jpeg */,
+				FC44B59122B25463004CEE24 /* rain3.bmp */,
+				FC44B59D22B2776E004CEE24 /* rain4.bmp */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FC44B50122B0C6C9004CEE24 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B53522B1307B004CEE24 /* bamboo2 */,
+				FC44B52722B12E9E004CEE24 /* house */,
+				FC44B52122B0F1F3004CEE24 /* bamboo */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FC44B52122B0F1F3004CEE24 /* bamboo */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B52222B0F1F3004CEE24 /* bamboo.mtl */,
+				FC44B52322B0F1F3004CEE24 /* bamboo.obj */,
+				FC44B52422B0F1F3004CEE24 /* bamboo */,
+			);
+			path = bamboo;
+			sourceTree = "<group>";
+		};
+		FC44B52422B0F1F3004CEE24 /* bamboo */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B52522B0F1F3004CEE24 /* Material__113.png */,
+				FC44B52622B0F1F3004CEE24 /* Material__114.png */,
+			);
+			path = bamboo;
+			sourceTree = "<group>";
+		};
+		FC44B52722B12E9E004CEE24 /* house */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B52822B12E9E004CEE24 /* house.obj */,
+				FC44B52922B12E9E004CEE24 /* house */,
+				FC44B53422B12E9E004CEE24 /* house.mtl */,
+			);
+			path = house;
+			sourceTree = "<group>";
+		};
+		FC44B52922B12E9E004CEE24 /* house */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B52A22B12E9E004CEE24 /* Wood_Floor_Parquet.jpg */,
+				FC44B52B22B12E9E004CEE24 /* Groundcover_RiverRock_4inch.jpg */,
+				FC44B52C22B12E9E004CEE24 /* _Wood_Cherry_Original_3.jpg */,
+				FC44B52D22B12E9E004CEE24 /* M_10546378_thatched_roof.jpg */,
+				FC44B52E22B12E9E004CEE24 /* _Wood_Floor_Parquet_1.jpg */,
+				FC44B52F22B12E9E004CEE24 /* Wood_Cherry_Original.jpg */,
+				FC44B53022B12E9E004CEE24 /* bamboo1logs.jpg */,
+				FC44B53122B12E9E004CEE24 /* M_10585440_texture_of_the_classic_thatch_roof_from_inside_view.jpg */,
+				FC44B53222B12E9E004CEE24 /* papanwall3_dark.jpg */,
+				FC44B53322B12E9E004CEE24 /* bamboo1logs_H.jpg */,
+			);
+			path = house;
+			sourceTree = "<group>";
+		};
+		FC44B53522B1307B004CEE24 /* bamboo2 */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B53622B1307B004CEE24 /* bamboo2.obj */,
+				FC44B53722B1307B004CEE24 /* bamboo2.mtl */,
+			);
+			path = bamboo2;
+			sourceTree = "<group>";
+		};
+		FC44B53D22B143C8004CEE24 /* SkyBox */ = {
+			isa = PBXGroup;
+			children = (
+				FC44B53E22B143C8004CEE24 /* riverside_north.BMP */,
+				FC44B53F22B143C8004CEE24 /* RiverSide.JPG */,
+				FC44B54022B143C8004CEE24 /* riverside_down.BMP */,
+				FC44B54122B143C8004CEE24 /* riverside_east.BMP */,
+				FC44B54222B143C8004CEE24 /* riverside_south.BMP */,
+				FC44B54322B143C8004CEE24 /* riverside_west.BMP */,
+				FC44B54422B143C8004CEE24 /* riverside_up.BMP */,
+			);
+			path = SkyBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC44B4C422AFA822004CEE24 /* GL_Final */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC44B4CC22AFA822004CEE24 /* Build configuration list for PBXNativeTarget "GL_Final" */;
+			buildPhases = (
+				FC44B4C122AFA822004CEE24 /* Sources */,
+				FC44B4C222AFA822004CEE24 /* Frameworks */,
+				FC44B4C322AFA822004CEE24 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GL_Final;
+			productName = GL_Final;
+			productReference = FC44B4C522AFA822004CEE24 /* GL_Final */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC44B4BD22AFA822004CEE24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "朱俊凯";
+				TargetAttributes = {
+					FC44B4C422AFA822004CEE24 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FC44B4C022AFA822004CEE24 /* Build configuration list for PBXProject "GL_Final" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC44B4BC22AFA822004CEE24;
+			productRefGroup = FC44B4C622AFA822004CEE24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC44B4C422AFA822004CEE24 /* GL_Final */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC44B4C122AFA822004CEE24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC44B4F322AFD6D7004CEE24 /* terrain.cpp in Sources */,
+				FC44B4EB22AFCDCF004CEE24 /* shader.cpp in Sources */,
+				FC44B4E522AFCB30004CEE24 /* texture.cpp in Sources */,
+				FC44B4C922AFA822004CEE24 /* main.cpp in Sources */,
+				FC44B4E822AFCB44004CEE24 /* resource_manager.cpp in Sources */,
+				FC44B59422B2554F004CEE24 /* Snow.cpp in Sources */,
+				FC44B53A22B13998004CEE24 /* skyBox.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC44B4CA22AFA822004CEE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC44B4CB22AFA822004CEE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC44B4CD22AFA822004CEE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/Users/zhujunkai/Desktop/GL/gl库",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/Users/zhujunkai/Desktop/GL/SOIL/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC44B4CE22AFA822004CEE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/Users/zhujunkai/Desktop/GL/gl库",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/glfw/3.2.1/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/Users/zhujunkai/Desktop/GL/SOIL/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC44B4C022AFA822004CEE24 /* Build configuration list for PBXProject "GL_Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC44B4CA22AFA822004CEE24 /* Debug */,
+				FC44B4CB22AFA822004CEE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC44B4CC22AFA822004CEE24 /* Build configuration list for PBXNativeTarget "GL_Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC44B4CD22AFA822004CEE24 /* Debug */,
+				FC44B4CE22AFA822004CEE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC44B4BD22AFA822004CEE24 /* Project object */;
+}
